@@ -3,3 +3,9 @@
   tasks:
     - name: execute command
       shell: touch example.txt
+
+    - name: command 
+      shell: uname -a
+      register: comd
+
+    - debug: var=comd
